@@ -34,6 +34,17 @@ v1.1.0 - Latest Ipdate (2025-09-26)
     Changed the Welocoming picture in the home page
     Added Google Fonts
 
+v1.1.1
+    Added JavaScript 
+    Added the sign up/log in menu
+    Added the pop-up massege for the form in the contact us page 
+    Added the SEO in the courses page
+     
+How to use the website
+1. Use the repository and live server link
+2. You can login/sign up by clicking the Login button on the navigation 
+3. You can browse through the website using the navigation system
+
 How to View the Website
 1. Download all project files.
 2. Open index.html in any web browser.
@@ -42,6 +53,12 @@ How to View the Website
 Future Improvements
 
 If more time is available, the following improvements could be added:
-1. Add JavaScript
-2. Add the Applying Page
+1. Add the Applying Page
 
+References
+
+- MDN Web Docs – https://developer.mozilla.org/
+- W3Schools HTML/CSS/JS References
+- Stack Overflow (for troubleshooting and solutions)
+- Font Awesome Documentation
+- Live Server Extension for VS Code
