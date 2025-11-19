@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-        <img src="../IMAGES/logo.jpg" alt="Endurance logo">
-        <h1>ENDURANCE</h1>
+            <img src="../IMAGES/logo.jpg" alt="Endurance logo">
+            <h1>ENDURANCE</h1>
         </div>
+
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Hamburger -->
+        <label class="hamburger" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu -->
         <nav class="navi">
+            <a href="#" id="openLogin">Login</a>
             <a href="../index.html">Home</a>
-            <a href="./courses.html">Courses</a>
-            <a href="./calender.html">Academic Calender</a>
-            <a href="./contact.html">Contact Us</a>
-            <a href="./about.html">About Us</a>
+            <a href="../PAGES/courses.html">Courses</a>
+            <a href="../PAGES/calender.html">Calendar</a>
+            <a href="../PAGES/contact.html">Contact Us</a>
+            
         </nav>
     </header>
     <main class="about">
@@ -85,5 +100,65 @@
 
         </div>
     </footer>
+    <!-- LOGIN & SIGNUP POPUP -->
+<div id="authModal" class="modal">
+
+    <div class="modal-content">
+
+        <!-- Close button -->
+        <span id="closeAuth" class="close-btn">&times;</span>
+
+        <!-- LOGIN FORM -->
+        <div id="loginBox" class="auth-box">
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <label>Username</label>
+                <input type="text" id="loginUsername" required>
+
+                <label>Password</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="switch-text">
+                Don’t have an account? <a href="#" id="showSignup">Sign Up</a>
+            </p>
+
+            <p id="loginMessage"></p>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div id="signupBox" class="auth-box" style="display: none;">
+            <h2>Sign Up</h2>
+
+            <form id="signupForm">
+                <label>Full Name</label>
+                <input type="text" id="signupName" required>
+
+                <label>Email</label>
+                <input type="email" id="signupEmail" required>
+
+                <label>Username</label>
+                <input type="text" id="signupUsername" required>
+
+                <label>Password</label>
+                <input type="password" id="signupPassword" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p class="switch-text">
+                Already have an account? <a href="#" id="showLogin">Login</a>
+            </p>
+
+            <p id="signupMessage"></p>
+        </div>
+
+    </div>
+</div>
+<script src="../JS/script.js"></script>
+
 </body>
 </html>
